@@ -215,6 +215,7 @@ select * from t1 where a = 'aaaa';
 select * from t1 where a like 'aaa%';
 select * from t1 where a = 'bbbb';
 drop table t1;
+set sql_mode='';
 -- error ER_PARTITION_FIELDS_TOO_LONG
 create table t1 (a varchar(3070)) partition by key (a);
 -- error ER_PARTITION_FIELDS_TOO_LONG
@@ -225,6 +226,7 @@ create table t1 (a varchar(65533)) partition by key (a);
 create table t1 (a varchar(65534) not null) partition by key (a);
 -- error ER_BLOB_FIELD_IN_PART_FUNC_ERROR
 create table t1 (a varchar(65535)) partition by key (a);
+set sql_mode=default;
 
 #
 # Bug#34358: error in key_restore for bitfields with uneven bits

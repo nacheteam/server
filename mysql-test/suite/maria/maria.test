@@ -931,6 +931,7 @@ show create table t1;
 drop table t1;
 
 # ARIA specific varchar tests
+set statement sql_mode='' for
 create table t1 (v varchar(65535));
 show create table t1;
 drop table t1;

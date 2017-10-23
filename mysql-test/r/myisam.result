@@ -1717,13 +1717,14 @@ t1	CREATE TABLE `t1` (
   `v` mediumtext CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1
 drop table t1;
+set statement sql_mode='' for
 create table t1 (v varchar(65535));
 Warnings:
 Note	1246	Converting column 'v' from VARCHAR to TEXT
 show create table t1;
 Table	Create Table
 t1	CREATE TABLE `t1` (
-  `v` text
+  `v` text DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1
 drop table t1;
 set storage_engine=MyISAM;
