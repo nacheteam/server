@@ -31,7 +31,6 @@ COMMIT;
 connection default;
 DELETE FROM t1 WHERE p = 2;
 # wait for purge to process the update_undo records.
-InnoDB		0 transactions not purged
 CREATE TABLE t2 (
 p INT PRIMARY KEY,
 g1 POINT NOT NULL,
@@ -81,7 +80,6 @@ COMMIT;
 connection default;
 DELETE FROM t1 WHERE p = 2;
 # wait for purge to process the update_undo records.
-InnoDB		0 transactions not purged
 CREATE TABLE t2 (
 p INT PRIMARY KEY,
 g1 POINT NOT NULL,
@@ -132,7 +130,6 @@ COMMIT;
 connection default;
 DELETE FROM t1 WHERE p = 2;
 # wait for purge to process the update_undo records.
-InnoDB		0 transactions not purged
 CREATE TABLE t2 (
 p INT PRIMARY KEY,
 g1 POINT NOT NULL,
@@ -182,7 +179,6 @@ COMMIT;
 connection default;
 DELETE FROM t1 WHERE p = 2;
 # wait for purge to process the update_undo records.
-InnoDB		0 transactions not purged
 CREATE TABLE t2 (
 p INT PRIMARY KEY,
 g1 POINT NOT NULL,
@@ -232,7 +228,6 @@ COMMIT;
 connection default;
 DELETE FROM t1 WHERE p = 2;
 # wait for purge to process the update_undo records.
-InnoDB		0 transactions not purged
 CREATE TABLE t2 (
 p INT PRIMARY KEY,
 g1 POINT NOT NULL,
@@ -283,7 +278,6 @@ COMMIT;
 connection default;
 DELETE FROM t1 WHERE p = 2;
 # wait for purge to process the update_undo records.
-InnoDB		0 transactions not purged
 CREATE TABLE t2 (
 p INT PRIMARY KEY,
 g1 POINT NOT NULL,
