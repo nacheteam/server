@@ -11,7 +11,6 @@
 ##############################################################################
 
 gis_split_inf : MDEV-14057 InnoDB GIS tests fail
-point_basic : MDEV-14060 InnoDB: Foreign key constraint to geometry type does not work
 row_format : MDEV-14057 InnoDB GIS tests fail
 rtree_estimate : MDEV-14057 InnoDB GIS tests fail
 rtree_multi_pk : MDEV-14057 InnoDB GIS tests fail
